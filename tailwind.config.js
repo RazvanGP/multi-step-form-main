@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         ubuntu: ['"Ubuntu"', "sans-serif"],
       },
+
       colors: {
         "marine-blue": "hsl(213, 96%, 18%)",
         "purplish-blue": "hsl(243, 100%, 62%)",
