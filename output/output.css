@@ -513,20 +513,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.bg-red-500 {
+.bg-marine-blue {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: hsl(213 96% 18% / var(--tw-bg-opacity));
 }
 
-.bg-blue-500 {
+.bg-strawberry-red {
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: hsl(354 84% 57% / var(--tw-bg-opacity));
+}
+
+.font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.font-bold {
+  font-weight: 700;
 }
