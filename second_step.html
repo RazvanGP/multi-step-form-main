@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Step</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./output/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Step 2 start -->
+    <div class="second-step flex flex-col max-w-md">
+      <h1 class="text-3xl font-bold text-marine-blue">Select your plan</h1>
+      <h2 class="text-cool-gray">
+        You have the option of monthly or yearly billing.
+      </h2>
+      <ul class="grid grid-cols-3 gap-5 py-10">
+        <li
+          class="card h-[170px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl"
+        >
+          <img
+            class="max-w-min"
+            src="./assets/images/icon-arcade.svg"
+            alt="arcade-icon"
+          />
+          <div>
+            <span class="text-xl font-bold text-marine-blue">Arcade</span>
+            <br />
+            <span class="text-cool-gray">$9/mo</span>
+          </div>
+        </li>
+
+        <li
+          class="card h-[170px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl"
+        >
+          <img
+            class="max-w-min"
+            src="./assets/images/icon-advanced.svg"
+            alt="advanced-icon"
+          />
+          <div>
+            <span class="text-xl font-bold text-marine-blue">Advanced</span>
+            <br />
+            <span class="text-cool-gray"> $12/mo</span>
+          </div>
+        </li>
+
+        <li
+          class="card h-[170px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl"
+        >
+          <img
+            class="max-w-min"
+            src="./assets/images/icon-pro.svg"
+            alt="pro-icon"
+          />
+          <div>
+            <span class="text-xl font-bold text-marine-blue">Pro</span>
+            <br />
+            <span class="text-cool-gray"> $15/mo</span>
+          </div>
+        </li>
+      </ul>
+      <div class="billing flex">
+        <span>Monthly</span>
+        <!-- Switch button -->
+        <div class="switch mx-2">
+          <label
+            class="billing-switch inline-block h-[26px] relative w-[55px]"
+            for="checkbox"
+          >
+            <input class="hidden" type="checkbox" id="checkbox" />
+            <div
+              class="slider round bg-[#ccc] absolute top-0 right-0 bottom-0 left-0 cursor-pointer transition rounded-[34px] before:rounded-full"
+            ></div>
+          </label>
+        </div>
+
+        <span>Yearly</span>
+      </div>
+      <div>
+        <button>Go Back</button>
+        <button>Next Step</button>
+      </div>
+    </div>
+    <!-- Step 2 end -->
+  </body>
+</html>

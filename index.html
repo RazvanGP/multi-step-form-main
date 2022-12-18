@@ -31,17 +31,17 @@
     />
   </head>
   <body
-    class="w-screen h-screen flex flex-col justify-center items-center bg-magnolia font-ubuntu"
+    class="container flex justify-center items-center h-screen mx-auto bg-magnolia font-ubuntu"
   >
     <main
-      class="grid grid-cols-3 gap-10 p-4 bg-white rounded-xl drop-shadow-xl"
+      class="container max-w-4xl grid grid-cols-3 gap-20 p-4 bg-white rounded-xl drop-shadow-xl"
     >
       <!-- Sidebar start -->
-      <aside>
+      <aside class="">
         <ol
-          class="sidebar w-[274px] h-[568px] bg-[url('.././assets/images/bg-sidebar-desktop.svg')] bg-no-repeat bg-cover bg-bottom rounded-lg pl-5 pr-10 pt-5 text-xs"
+          class="sidebar h-[568px] min-w-[190px] bg-[url('.././assets/images/bg-sidebar-desktop.svg')] bg-no-repeat bg-cover bg-bottom rounded-lg pl-8 pt-8 text-xs"
         >
-          <li class="sidebar-card flex justify-start items-center pb-5">
+          <li class="sidebar-card flex justify-start items-center pb-8">
             <span
               class="step-number leading-[32px] w-[32px] h-[32px] rounded-full bg-light-blue text-center align-middle"
               >1</span
@@ -52,7 +52,7 @@
             </p>
           </li>
 
-          <li class="sidebar-card flex justify-start items-center pb-5">
+          <li class="sidebar-card flex justify-start items-center pb-8">
             <span
               class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
               >2</span
@@ -63,7 +63,7 @@
             </p>
           </li>
 
-          <li class="sidebar-card flex justify-start items-center pb-5">
+          <li class="sidebar-card flex justify-start items-center pb-8">
             <span
               class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
               >3</span
@@ -74,7 +74,7 @@
             </p>
           </li>
 
-          <li class="sidebar-card flex justify-start items-center pb-5">
+          <li class="sidebar-card flex justify-start items-center pb-8">
             <span
               class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
               >4</span
@@ -87,12 +87,16 @@
         </ol>
       </aside>
       <!-- Sidebar end -->
+
+      <!-- iframe start -->
       <iframe
-        class="w-full col-span-2 h-full my-10"
-        src="./first_step.html"
+        class="w-full col-span-2 h-full pt-8"
+        src="./second_step.html"
         title="First Step"
         frameborder="0"
+        scrolling="no"
       ></iframe>
+      <!-- iframe end -->
     </main>
     <footer class="absolute bottom-0 p-5 attribution">
       Challenge by
