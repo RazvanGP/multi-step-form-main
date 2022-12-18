@@ -34,220 +34,65 @@
     class="w-screen h-screen flex flex-col justify-center items-center bg-magnolia font-ubuntu"
   >
     <main
-      class="flex flex-row w-[800px] p-5 justify-between mx-autoitems-center bg-white rounded-xl drop-shadow-xl"
+      class="grid grid-cols-3 gap-10 p-4 bg-white rounded-xl drop-shadow-xl"
     >
       <!-- Sidebar start -->
-      <ol
-        class="sidebar h-full bg-[url('.././assets/images/bg-sidebar-desktop.svg')] bg-no-repeat bg-auto bg-bottom rounded-md pl-5 pr-10 pt-5 text-xs"
-      >
-        <li class="sidebar-card flex justify-start items-center pb-5">
-          <span
-            class="step-number leading-[32px] w-[32px] h-[32px] rounded-full bg-light-blue text-center align-middle"
-            >1</span
-          >
-          <p class="step-title flex flex-col uppercase pl-5 leading-[16px]">
-            <span class="text-cool-gray">Step 1</span>
-            <span class="text-alabaster">Your info</span>
-          </p>
-        </li>
-
-        <li class="sidebar-card flex justify-start items-center pb-5">
-          <span
-            class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
-            >2</span
-          >
-          <p class="step-title flex flex-col uppercase pl-5 leading-[16px]">
-            <span class="text-cool-gray">Step 2</span>
-            <span class="text-alabaster">Select plan</span>
-          </p>
-        </li>
-
-        <li class="sidebar-card flex justify-start items-center pb-5">
-          <span
-            class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
-            >3</span
-          >
-          <p class="step-title flex flex-col uppercase pl-5 leading-[16px]">
-            <span class="text-cool-gray">Step 3</span>
-            <span class="text-alabaster">Add-ons</span>
-          </p>
-        </li>
-
-        <li class="sidebar-card flex justify-start items-center pb-5">
-          <span
-            class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
-            >4</span
-          >
-          <p class="step-title flex flex-col uppercase pl-5 leading-[16px]">
-            <span class="text-cool-gray">Step 4</span>
-            <span class="text-alabaster">Summary</span>
-          </p>
-        </li>
-      </ol>
-      <!-- Sidebar end -->
-      <div
-        class="main-container basis-2/3 pt-5 pr-10 flex flex-col justify-between"
-      >
-        <!-- Step 1 start -->
-        <div class="first-step flex flex-col">
-          <h1 class="text-3xl font-bold text-marine-blue">Personal info</h1>
-          <p class="text-cool-gray">
-            Please provide your name, email address, and phone number.
-          </p>
-          <form action="" class="pt-10 pb-20 flex flex-col justify-around">
-            <label class="text-marine-blue font-medium" for="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="e.g. Stephen King"
-              class="border p-2 rounded-md mb-4"
-            />
-
-            <label class="text-marine-blue font-medium" for="email"
-              >Email Address</label
+      <aside>
+        <ol
+          class="sidebar w-[274px] h-[568px] bg-[url('.././assets/images/bg-sidebar-desktop.svg')] bg-no-repeat bg-cover bg-bottom rounded-lg pl-5 pr-10 pt-5 text-xs"
+        >
+          <li class="sidebar-card flex justify-start items-center pb-5">
+            <span
+              class="step-number leading-[32px] w-[32px] h-[32px] rounded-full bg-light-blue text-center align-middle"
+              >1</span
             >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="e.g. stephenking@lorem.com"
-              class="border p-2 rounded-md mb-4"
-            />
-            <label class="text-marine-blue font-medium" for="phone"
-              >Phone Number
-            </label>
-            <input
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="e.g. +1 234 567 890"
-              class="border p-2 rounded-md"
-            />
-          </form>
-          <button
-            class="bg-marine-blue text-alabaster py-2 px-5 rounded-md text-base self-end"
-          >
-            Next Step
-          </button>
-        </div>
-        <!-- Step 1 end -->
+            <p class="step-title flex flex-col uppercase pl-5 leading-[16px]">
+              <span class="text-cool-gray">Step 1</span>
+              <span class="text-alabaster">Your info</span>
+            </p>
+          </li>
 
-        <!-- Step 2 start -->
-        <div class="second-step hidden">
-          <h1>Select your plan</h1>
-          <h2>You have the option of monthly or yearly billing.</h2>
-          <ul>
-            <li class="card">
-              <img src="./assets/images/icon-arcade.svg" alt="arcade-icon" />
-              <div>
-                <span>Arcade</span>
-                <span>$9/mo</span>
-              </div>
-            </li>
+          <li class="sidebar-card flex justify-start items-center pb-5">
+            <span
+              class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
+              >2</span
+            >
+            <p class="step-title flex flex-col uppercase pl-5 leading-[16px]">
+              <span class="text-cool-gray">Step 2</span>
+              <span class="text-alabaster">Select plan</span>
+            </p>
+          </li>
 
-            <li class="card">
-              <img
-                src="./assets/images/icon-advanced.svg"
-                alt="advanced-icon"
-              />
-              <div>
-                <span>Advanced</span>
-                <span>$12/mo</span>
-              </div>
-            </li>
+          <li class="sidebar-card flex justify-start items-center pb-5">
+            <span
+              class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
+              >3</span
+            >
+            <p class="step-title flex flex-col uppercase pl-5 leading-[16px]">
+              <span class="text-cool-gray">Step 3</span>
+              <span class="text-alabaster">Add-ons</span>
+            </p>
+          </li>
 
-            <li class="card">
-              <img src="./assets/images/icon-pro.svg" alt="pro-icon" />
-              <div>
-                <span>Pro</span>
-                <span> $15/mo</span>
-              </div>
-            </li>
-          </ul>
-          <div class="billing">
-            <span>Monthly</span>
-            <input type="radio" name="billingPeriod" id="billingPeriod" />
-            <span>Yearly</span>
-          </div>
-          <div>
-            <button>Go Back</button>
-            <button>Next Step</button>
-          </div>
-        </div>
-        <!-- Step 2 end -->
-
-        <!-- Step 3 start -->
-        <div class="third-step hidden">
-          <h1>Pick add-ons</h1>
-          <h2>Add-ons help enhance your gaming experience.</h2>
-          <ul>
-            <li class="card">
-              <input type="checkbox" name="onlineService" id="onlineService" />
-              <div>
-                <span>Online service</span>
-                <span>Access to multiplayer games</span>
-              </div>
-              <span>+$1/mo </span>
-            </li>
-
-            <li class="card">
-              <input type="checkbox" name="largerStorage" id="largerStorage" />
-              <div>
-                <span>Larger storage</span>
-                <span>Extra 1TB of cloud save</span>
-              </div>
-              <span>+$2/mo </span>
-            </li>
-
-            <li class="card">
-              <input
-                type="checkbox"
-                name="customizableProfile"
-                id="customizableProfile"
-              />
-              <div>
-                <span>Customizable Profile</span>
-                <span>Custom theme on your profile</span>
-              </div>
-              <span>+$2/mo </span>
-            </li>
-          </ul>
-          <div>
-            <button>Go Back</button>
-            <button>Next Step</button>
-          </div>
-        </div>
-        <!-- Step 3 end -->
-
-        <!-- Step 4 start -->
-        <div class="fourth-step hidden">
-          <h1>Finishing up</h1>
-          <h2>Double-check everything looks OK before confirming.</h2>
-
-          <div>Dynamically add subscription and add-on selections here</div>
-
-          <div>Total (per month/year)</div>
-
-          <div>
-            <button>Go Back</button>
-            <button>Confirm</button>
-          </div>
-        </div>
-        <!-- Step 4 end -->
-
-        <!-- Step 5 start -->
-        <div class="fifth-step hidden">
-          <img src="./assets/images/icon-thank-you.svg" alt="thank-you-icon" />
-          <h1>Thank you!</h1>
-          <p>
-            Thanks for confirming your subscription! We hope you have fun using
-            our platform. If you ever need support, please feel free to email us
-            at support@loremgaming.com.
-          </p>
-        </div>
-        <!-- Step 5 end -->
-      </div>
+          <li class="sidebar-card flex justify-start items-center pb-5">
+            <span
+              class="step-number leading-[32px] w-[32px] h-[32px] rounded-full border border-alabaster text-center align-middle text-alabaster"
+              >4</span
+            >
+            <p class="step-title flex flex-col uppercase pl-5 leading-[16px]">
+              <span class="text-cool-gray">Step 4</span>
+              <span class="text-alabaster">Summary</span>
+            </p>
+          </li>
+        </ol>
+      </aside>
+      <!-- Sidebar end -->
+      <iframe
+        class="w-full col-span-2 h-full my-10"
+        src="./first_step.html"
+        title="First Step"
+        frameborder="0"
+      ></iframe>
     </main>
     <footer class="absolute bottom-0 p-5 attribution">
       Challenge by
