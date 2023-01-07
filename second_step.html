@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,81 +17,114 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="h-full">
     <!-- Step 2 start -->
-    <div class="second-step flex flex-col max-w-md">
+    <div class="second-step flex flex-col max-w-md h-full justify-evenly">
       <h1 class="text-3xl font-bold text-marine-blue">Select your plan</h1>
       <h2 class="text-cool-gray">
         You have the option of monthly or yearly billing.
       </h2>
-      <ul class="grid grid-cols-3 gap-5 py-10">
-        <li
-          class="card h-[170px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl"
-        >
-          <img
-            class="max-w-min"
-            src="./assets/images/icon-arcade.svg"
-            alt="arcade-icon"
-          />
-          <div>
-            <span class="text-xl font-bold text-marine-blue">Arcade</span>
-            <br />
-            <span class="text-cool-gray">$9/mo</span>
-          </div>
-        </li>
-
-        <li
-          class="card h-[170px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl"
-        >
-          <img
-            class="max-w-min"
-            src="./assets/images/icon-advanced.svg"
-            alt="advanced-icon"
-          />
-          <div>
-            <span class="text-xl font-bold text-marine-blue">Advanced</span>
-            <br />
-            <span class="text-cool-gray"> $12/mo</span>
-          </div>
-        </li>
-
-        <li
-          class="card h-[170px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl"
-        >
-          <img
-            class="max-w-min"
-            src="./assets/images/icon-pro.svg"
-            alt="pro-icon"
-          />
-          <div>
-            <span class="text-xl font-bold text-marine-blue">Pro</span>
-            <br />
-            <span class="text-cool-gray"> $15/mo</span>
-          </div>
-        </li>
+      <ul class="plans grid grid-cols-3 gap-5 py-10">
+        <button class="arcade-btn">
+          <li
+            class="arcade card h-[200px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl hover:border hover:border-marine-blue"
+          >
+            <img
+              class="max-w-min"
+              src="./assets/images/icon-arcade.svg"
+              alt="arcade-icon"
+            />
+            <div class="text-left">
+              <span class="text-xl font-bold text-marine-blue">Arcade</span>
+              <br />
+              <span class="text-cool-gray price">$9/mo</span>
+              <br />
+              <span class="text-marine-blue bonus text-sm hidden"
+                >2 months free</span
+              >
+            </div>
+          </li>
+        </button>
+        <button class="advanced-btn">
+          <li
+            class="advanced card h-[200px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl hover:border hover:border-marine-blue"
+          >
+            <img
+              class="max-w-min"
+              src="./assets/images/icon-advanced.svg"
+              alt="advanced-icon"
+            />
+            <div class="text-left">
+              <span class="text-xl font-bold text-marine-blue">Advanced</span>
+              <br />
+              <span class="text-cool-gray price"> $12/mo</span>
+              <br />
+              <span class="text-marine-blue bonus text-sm hidden"
+                >2 months free</span
+              >
+            </div>
+          </li>
+        </button>
+        <button class="pro-btn">
+          <li
+            class="pro card h-[200px] flex flex-col justify-between p-5 border border-slate-300 rounded-xl hover:border hover:border-marine-blue"
+          >
+            <img
+              class="max-w-min"
+              src="./assets/images/icon-pro.svg"
+              alt="pro-icon"
+            />
+            <div class="text-left">
+              <span class="text-xl font-bold text-marine-blue">Pro</span>
+              <br />
+              <span class="text-cool-gray price"> $15/mo</span>
+              <br />
+              <span class="text-marine-blue bonus text-sm hidden"
+                >2 months free</span
+              >
+            </div>
+          </li>
+        </button>
       </ul>
-      <div class="billing flex">
-        <span>Monthly</span>
+      <!--Billing switch-->
+      <div
+        class="billing flex justify-center bg-magnolia py-2 rounded-xl items-center"
+      >
+        <span class="monthly text-marine-blue font-extrabold">Monthly</span>
+
         <!-- Switch button -->
-        <div class="switch mx-2">
+        <div class="switch mx-10">
           <label
             class="billing-switch inline-block h-[26px] relative w-[55px]"
             for="checkbox"
           >
-            <input class="hidden" type="checkbox" id="checkbox" />
+            <input
+              class="hidden switch-checkbox"
+              type="checkbox"
+              id="checkbox"
+            />
             <div
-              class="slider round bg-[#ccc] absolute top-0 right-0 bottom-0 left-0 cursor-pointer transition rounded-[34px] before:rounded-full"
+              class="slider round bg-marine-blue absolute top-0 right-0 bottom-0 left-0 cursor-pointer transition rounded-[34px] before:rounded-full"
             ></div>
           </label>
         </div>
 
-        <span>Yearly</span>
+        <span class="yearly">Yearly</span>
       </div>
-      <div>
-        <button>Go Back</button>
-        <button>Next Step</button>
+
+      <!-- Navigation buttons -->
+      <div
+        class="nav-btns container flex justify-between items-end self-end mt-10"
+      >
+        <button class="text-cool-gray">Go Back</button>
+        <button
+          class="bg-marine-blue text-alabaster py-2 px-5 rounded-md text-base self-end mt-10"
+        >
+          Next Step
+        </button>
       </div>
     </div>
     <!-- Step 2 end -->
+    <script src="./script.js"></script>
   </body>
 </html>
